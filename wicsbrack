@@ -20,20 +20,31 @@
             margin: 0;
         }
 
+        /* Header styles */
+        header {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Logo styles */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
         /* Navigation styles */
         nav {
             background-color: #333;
             text-align: center;
             padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            font-size: 24px; /* Increased font size */
-            padding: 10px; /* Increased padding */
+            margin: 0 15px;
+            font-size: 16px;
         }
         nav a:hover {
             color: #ddd;
@@ -71,8 +82,11 @@
 </head>
 <body>
 
-<nav>
+<header>
     <div class="logo">Women in Computer Science</div>
+</header>
+
+<nav>
     <a href="#">About</a>
     <a href="#">Events</a>
     <a href="#">Opportunities</a>
