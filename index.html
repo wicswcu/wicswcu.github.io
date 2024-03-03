@@ -3,43 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WiCS</title>
+    <title>Women in Computer Science - University of Pennsylvania</title>
     <style>
-        /* CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
+        /* Resetting default margin and padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Header styles */
         header {
-            background-image: url('header-image.jpg');
-            background-size: cover;
-            background-position: center;
-            color: #ff00a6;
-            padding: 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
+
+        /* Logo styles */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation styles */
         nav {
-            background-color: #444;
+            background-color: #333;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-size: 16px;
         }
         nav a:hover {
             color: #ddd;
         }
-        section {
+
+        /* Main section styles */
+        main {
             padding: 20px;
         }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .content h2 {
+            margin-bottom: 10px;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer styles */
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -49,23 +83,30 @@
 <body>
 
 <header>
-    <h1>WiCS WCU</h1>
+    <div class="logo">Women in Computer Science</div>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">About</a>
+    <a href="#">Events</a>
+    <a href="#">Opportunities</a>
+    <a href="#">Join</a>
 </nav>
 
-<section>
-    <h2>Homepage Content Goes Here</h2>
-    <p>This is the homepage of our website. You can put your main content here.</p>
-</section>
+<main>
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Welcome to Women in Computer Science (WiCS) at the University of Pennsylvania. We aim to support and empower women and other underrepresented groups in the field of computer science.</p>
+    </div>
+
+    <div class="content">
+        <h2>Upcoming Events</h2>
+        <p>Stay tuned for our upcoming events!</p>
+    </div>
+</main>
 
 <footer>
-    &copy; 2024 My Website. All Rights Reserved.
+    &copy; 2024 Women in Computer Science - University of Pennsylvania
 </footer>
 
 </body>
