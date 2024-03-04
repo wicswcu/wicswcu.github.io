@@ -1,5 +1,290 @@
-body {
-    margin: 0;
-    background: pink;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway|Roboto|Montserrat');
+
+/* Base */
+:root {
+  --logo-light: #f63643;
+  --logo-dark: #973d4b;
+  --dark: #773344;
+  --light-pink: #e3b5a4;
+  --pink: #fdab9f;
+  --light: #f5e9e2;
+  --gray: #414141;
 }
+body, html {
+  height: 100%;
+  font-size: 20px;
+  padding: 0;
+  margin: 0.3em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+.flex {
+  display: flex;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.full {
+  min-height: 100%;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: var(--dark);
+}
+/* TITLES */
+.title-lower {
+  font-family: 'Roboto';
+  font-size: 2em;
+  color: var(--dark);
+  margin: 0.5em 0em;
+  font-weight: bolder;
+}
+.title-bold {
+  font-family: 'Roboto';
+  font-size: 3em;
+  color: var(--dark);
+  font-weight: bolder;
+}
+.title-board {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'Montserrat';
+  font-size: 5em;
+  font-weight: bolder;
+}
+.title-sponsor {
+  font-family: 'Montserrat';
+  color: var(--gray);
+  font-size: 5em;
+  letter-spacing: 0.3em;
+  font-weight: bolder;
+  background: url(photo/texture.jpg) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-program {
+  font-family: 'Poiret One', cursive;
+  font-size: 3.5em;
+  letter-spacing: 10px;
+}
+/* BUTTON */
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+.landing-btn {
+  color: var(--dark);
+  font-size: 1em;
+  font-family: 'Roboto';
+  border: 0.5em solid var(--dark);
+  padding: 3em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.sponsor-btn {
+  color: white;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  border: none;
+  padding: 2em;
+  border-radius: 4em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  background: url(photo/texture.jpg) no-repeat;
+}
+/* INDEX */
+ul.nav-container {
+  list-style: none;
+}
+.nav-container {
+  justify-content: space-between;
+  margin: 4em 2em 2em 2em;
+  padding: 0;
+}
+li > a {
+  text-decoration: none;
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+}
+.logo {
+  width: 200%;
+}
+.wics-link {
+  padding: 0em 2em;
+  max-width: 15%;
+}
+.wics {
+  margin: 0em 2em;
+}
+.landing {
+  background-image: url(./photo/board.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.about {
+  max-width: 60%;
+  margin: 6em 0em;
+}
+.blurb {
+  font-size: 1em;
+  color: var(--gray);
+}
+.more-container {
+  background-image: url(./photo/desk.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.more {
+  margin: 2em 5em;
+  justify-content: space-around;
+}
+
+/* BOARD */
+.board-intro {
+  background-image: url(./photo/board.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+.board-container {
+  font-size: 1em;
+  margin-top: 5em;
+}
+.board {
+  width: 70%;
+}
+.card {
+  width: 25%;
+  margin-bottom: 5em;
+}
+.photo {
+  width: 10em;
+  margin-bottom: 2em;
+}
+.name {
+  text-align: center;
+  font-weight: 200;
+  padding: 0.5em;
+}
+.pos {
+  text-align: center;
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+/* PROGRAOMS */
+.description {
+  width: 70%;
+  margin-top: 2em;  
+}
+.program {
+  margin: 2em 0em;
+}
+.dark {
+  color: var(--logo-dark);
+}
+.community {
+  background-color: var(--pink);
+}
+.femmehacks {
+  background-color: var(--light-pink);
+}
+.prof {
+  background-color: var(--light);
+}
+/* RESOURCES */
+.resource-container {
+  padding: 2.5% 5%;
+}
+
+
+/* SPONSORS */
+.sponsor-container {
+  padding: 5%;
+}
+.sponsor {
+  margin: 3em 0em 7em;
+}
+.title-company {
+  width: 15em;
+  padding: 0em 2em;
+}
+.company {
+  width: 10em;
+  padding: 0em 2em;
+}
+h2.thankyou {
+  text-align: center;
+}
+
+
+/* Contact */
+.contact {
+  margin: 0% 18%;
+}
+.contact-container {
+  background-color: var(--light);
+  margin: 5% 0%;
+}
+.contact-card {
+  width: 25%;
+  margin: 3em;
+  text-align: center;
+}
+
+/* Port over as needed */
+
+
+/* 
+
+
+
+
+
+
+
+.education {
+  background-color: var(--logo-light);
+}
+
+.prof {
+  background-color: var(--logo-dark);
+}
+.contact {
+  background-image: url('splash.png');
+  background-size: cover;
+}
+.light {
+  color: var(--light);
+} */
+/* .parallax { 
+  background-COLOR: url("splash.png");
+  background: fixed center no-repeat cover;
+  /* Create the parallax scrolling effect 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+} */
