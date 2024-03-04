@@ -122,7 +122,8 @@ li > a {
   font-size: 1em;
 }
 .logo {
-  width: 200%;
+  height: 60px;
+  width: auto;
 }
 .wics-link {
   padding: 0em 2em;
