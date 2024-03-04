@@ -110,7 +110,7 @@ ul.nav-container {
 }
 .nav-container {
   justify-content: space-between;
-  margin: 4em 2em 2em 2em;
+  margin: 0.5em 2em;
   padding: 0;
 }
 li > a {
