@@ -1,107 +1,128 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women in Computer Science - University of Pennsylvania</title>
-    <style>
-        /* Resetting default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 24px; /* Increased font size */
-            padding: 10px; /* Increased padding */
-        }
-        nav a:hover {
-            color: #ddd;
-        }
-        nav .logo {
-        flex-grow: 1; /* Logo takes up remaining space */
-        text-align: center;
-        }
-        nav .logo img {
-        width: 50px; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-        }
-        /* Main section styles */
-        main {
-            padding: 20px;
-        }
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .content h2 {
-            margin-bottom: 10px;
-        }
-        .content p {
-            margin-bottom: 15px;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <title>Penn WiCS</title>
+  <!-- Style Sheet -->
+  <link href ='style.css' type = "text/css" rel = 'stylesheet' />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
+  <nav class="topnav">
+    <ul class="flex center nav-container">
+      <li>
+        <a href="index.html">About</a>
+      </li>
+      <li>
+        <a href="program.html">Our Programs</a>
+      </li>
+      <li class="wics-link">
+        <a class="wics flex center" href="index.html"><img class="logo" src="./logo/wics.png" /></a>
+      </li>
+      <li>
+        <a href="sponsors.html">Our Sponsors</a>
+      </li>
+      <li>
+        <a href="board.html">Our Board</a>
+      </li>
+    </ul>
+  </nav>
 
-<nav>
-    <a href="#">About</a>
-    <a href="#">Events</a>
-    <div class="logo">
-        <img src="logo.png" alt="Women in Computer Science">
+  <div class="flex center landing">
+    <div class="flex col">
     </div>
-    <a href="#">Opportunities</a>
-    <a href="#">Join</a>
-</nav>
+  </div>
 
-<main>
-    <div class="content">
-        <h2>About Us</h2>
-        <p>Welcome to Women in Computer Science (WiCS) at the University of Pennsylvania. We aim to support and empower women and other underrepresented groups in the field of computer science.</p>
+  <div class="flex center">
+    <div class="full flex about col">
+      <span class="title-lower" align="center">Our Mission</span>
+      <div class=" blurb">
+        The University of Pennsylvania Women in Computer Science (WiCS) student organization aims to foster a community for Penn students who support the advancement of women in tech including Computer Science, Computer Engineering, Computational Biology, Digital Media Design and Networked and Social Systems Engineering. Our purpose is to support and promote students who identify as women in CS by raising awareness about the issues they face, fostering communication, and creating a sense of community.
+        <br /><br />
+        WiCS is open to all students, regardless of gender, gender identity, or sexual orientation, who support the mission of WiCS. 
+      </div>    
     </div>
+  </div>
 
-    <div class="content">
-        <h2>Upcoming Events</h2>
-        <p>Stay tuned for our upcoming events!</p>
+  <div class="flex center">
+    <div class="full flex about col">
+      <span class="title-lower" align="center">Resources</span>
+      <div >
+        <a href="https://docs.google.com/document/d/1iH_4DhAr-s3OM2kK8r2qui0AfOHeVxWhsx8Z4GjpLqA/edit">Freshman Guide</a><br/>
+        <a href="https://tiny.cc/cis-survey1819">2018-19 WiCS x CIS Diversity Survey Results</a><br>
+        <a href="https://diversity.upenn.edu/diversity-at-penn/bias-motivated-incident-report">Bias Incident Reporting Form</a>
+      </div>    
     </div>
-</main>
+  </div>
 
-<footer>
-    &copy; 2024 Women in Computer Science - University of Pennsylvania
-</footer>
+ 
 
+  <div class="contact-container">
+      <div class="flex center">
+          <span class="title-lower">Contact Us</span>
+      </div>
+    <div class="flex center row contact">
+        <div class="flex center col contact-card">
+          <a href="https://www.facebook.com/wicsatpenn">
+            <span style="font-size: 5em; color: #973d4b;">
+                <i class="fab fa-facebook-f"></i>
+            </span> <br />
+            Like us on Facebook</a>
+        </div>
+        <div class="flex center col contact-card">
+          <a href="mailto:pennwics@gmail.com"> 
+            <span style="font-size: 5em; color: #973d4b;">
+                <i class="fas fa-paper-plane"></i>
+            </span> <br />
+            <span>Email us at pennwics@gmail.com</a></span>
+          </div>
+        <div class="flex center col contact-card">
+          <a href="http://eepurl.com/bctMyr">
+          <span style="font-size: 5em; color: #973d4b;">
+              <i class="fas fa-envelope"></i>
+          </span> <br />
+           Join our <br>mailing list</a>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- GOOGLE CALENDAR -->
+  <div class="flex center col">
+      <span class="title-lower">Our Events</span>
+    <iframe src="https://calendar.google.com/calendar/embed?src=pennwics%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <br />
+    <br />
+  </div>
+  
+ <!--  <div class="flex more-container">
+    <div class="flex col more">
+      <span class="title-bold">
+        Learn More
+      </span>
+      <button>
+        <span class="landing-btn"><a href="program.html">
+          OUR INITIATIVES
+        </a></span>
+      </button>
+      <span>
+      </span>
+      <span class="title-bold">
+        Support Us
+      </span>
+      <button>
+        <span class="landing-btn"><a href="sponsors.html">
+          BECOME A SPONSOR
+        </a></span>
+      </button>
+    </div>
+  </div> -->
+
+<!-- Scripts -->
+  <script src='jquery-3.2.1.js'></script>
+  <script src='main.js'></script>
 </body>
+
 </html>
