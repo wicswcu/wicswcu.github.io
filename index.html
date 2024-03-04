@@ -38,7 +38,14 @@
         nav a:hover {
             color: #ddd;
         }
-
+        nav .logo {
+        flex-grow: 1; /* Logo takes up remaining space */
+        text-align: center;
+        }
+        nav .logo img {
+        width: 50px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        }
         /* Main section styles */
         main {
             padding: 20px;
@@ -76,6 +83,8 @@
     <a href="#">Events</a>
     <div class="logo">
         <img src="logo.png" alt="Women in Computer Science">
+        background-position:20% 20%; 
+        background-size:600px 800px;">
     <div>
     <a href="#">Opportunities</a>
     <a href="#">Join</a>
