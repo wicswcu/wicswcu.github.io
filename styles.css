@@ -261,7 +261,7 @@ h2.thankyou {
 }
 .contact-container {
   background-color: var(--pink);
-  margin: 2% 5% 2%;
+  margin: 2% 0% 2%;
 }
 .contact-card {
   width: 25%;
